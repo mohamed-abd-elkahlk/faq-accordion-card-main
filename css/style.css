@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+    width: 85%;
+    background-color: #fff;
+    display: flex;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main .imagetow {
+    position: relative;
+}
+
+main .imagetow img {
+    position: relative;
+    left: -50px;
+}
+
+main .imagethree {
+    display: none;
+}
+
+main .imageOne {
+    position: absolute;
+    top: 55%;
+    left: -30px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+main .content {
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main .content h1 {
+    margin-bottom: 20px;
+}
+
+main .content .text {
+    border-bottom: 1px solid hsla(237, 12%, 33%, 0.719);
+}
+
+main .content button {
+    width: 100%;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+main .content button p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+main .content button:hover {
+    color: hsl(14, 88%, 65%);
+    transition: .2s;
+}
+
+main .content .answer {
+    display: none;
+    padding: 10px;
+}
+
+main .content .answer p {
+    color: hsl(240, 6%, 50%);
+}
